@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript">
+        function Borrar(){
+            document.getElementById('Calculadora').reset();
+            
+    }   
+
+    function Techado(){
+            
+            var TA=(document.getElementById('TA').value);
+            var TB=(document.getElementById('TB').value);
+            var TC=(document.getElementById('TC').value);
+            var TD=(document.getElementById('TD').value);
+            var TE=(document.getElementById('TE').value);
+            var TF=(document.getElementById('TF').value);
+            var TG=(document.getElementById('TG').value);                
+            var TH=(document.getElementById('TH').value);
+            var TI=(document.getElementById('TI').value);
+            var TJ=(document.getElementById('TJ').value);
+            var TK=(document.getElementById('TK').value);
+            var TDTE=(document.getElementById('TDTE').value);
+            var Ttc=(document.getElementById('Ttc').value);
+            var TX=(TC/TB);
+            var TY=(TE/TD);
+            var TZ=(TG/TF);
+            var TV=(TI/TH);
+            var TW=(TK/TJ);
+            var Th1=6.6;
+            var The=13;
+            var Tru=((1/Th1)+(1/The));
+            var TR=(Tru+TX+TY+TZ+TV+TW);
+            var TU=(1/TR);
+            var TDt=(TDTE-Ttc);
+            var TQ=(TA*TU*TDt);
+       
+            document.getElementById('are').innerHTML=TA;      
+            document.getElementById('U').innerHTML=TU;   
+            document.getElementById('R').innerHTML=TR; 
+            document.getElementById('Q').innerHTML=TQ;   
+
+        }
+
+    </script>
+
+
+
+
+    <style type="text/css">
+    table, th, td{
+
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+    input#Delete{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Cal{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #7AF81F;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Regresar{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+
+    </style> 
+
+
+
+
+    <meta charset="utf-8">
+    <title>Techado</title>
+</head>
+<body>      
+    <link rel="stylesheet" type="text/css" href="Atil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title><br><br>
+
+</head>
+<body>
+    <center>
+    <img src="Images/Rosa.jpg" width="200px"  /><br><br><br>
+    <hr><br>
+
+<form id="Calculadora">
+<h2> En caso que sobren casillas Vacias, poner K=1 y e=0, para no alterar los calculos</h2><hr>
+
+    <h2>Ingresa Datos Techado</h2>
+
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la Loza.....</label>
+        <input type="number" id="TA" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Loz.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica de la Loza(K)</label>
+    <input type="number" id="TB" placeholder="W/m.K"><br><br>
+    <label>Espesor de la Loza(e)</label>
+    <input type="text" id="TC" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+<tr> 
+
+    <th> <label>Conductividad, Recubrimiento Interno 1(K)</label>
+    <input type="number" id="TD" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TE" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Lozint.jpg" width="200px"  /><br><br><br> </th>
+    <th> <label>Conductividad, Recubrimiento Interno 2(K)</label>
+    <input type="number" id="TF" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TG" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Recint3.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+
+
+<tr> 
+
+    <th> <label>Conductividad, Recubrimiento Interno 3(K)</label>
+    <input type="number" id="TH" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TI" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Loz4.jpg" width="200px"  /><br><br><br> </th>
+    <th> <label>Conductividad, Recubrimiento Interno 4(K)</label>
+    <input type="number" id="TJ" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TK" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Loz5.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="TDTE" placeholder="DTE"><br><br></th>
+    <th><label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="Ttc" placeholder="C°"><br><br></th>
+</tr>
+</table>    
+
+    <h2>Resultados</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="are"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="U"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="R"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="Q"></span></td>
+    </tr>   
+</table>
+<br><br>
+
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Pared.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Techado();" value="Calcular">
+    <br><br>
+    <hr>
+</form>
+ <br>
+
+</center>
+<br><br>
+<br><br><br>
+</body>
+</html>
+
+        

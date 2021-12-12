@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript">
+
+
+
+        
+        function Borrar(){
+            document.getElementById('Calculadora').reset();
+            
+    }   
+
+    function VidrioN(){
+      alert("Calcular lado - Norte, cabe destacar que los valores necesarios estan incluidos en las ecuaciones y tomados en la NOM-008. Software Charly'S");
+        var A=(document.getElementById('A').value);
+        var B=(document.getElementById('B').value);     
+        var DTE=(document.getElementById('DTE').value);
+        var tc=(document.getElementById('tc').value);
+        var Th1=8.1;
+        var The=13;
+        var Tru=((1/Th1)+(1/The));//R
+        var TR=1/Tru;
+        var TUR=(TR-(-B));//U
+        var t=(DTE-tc);
+        var TQ=(A*TUR*t);
+
+         document.getElementById('are').innerHTML=A;  
+         document.getElementById('U').innerHTML=TUR;   
+         document.getElementById('R').innerHTML=Tru;
+         document.getElementById('Q').innerHTML=TQ;
+         document.getElementById('NQTOTAL').innerHTML=TQ;
+
+    }
+
+
+        function VidrioS(){
+        alert("Calcular lado - Sur, cabe destacar que los valores necesarios estan incluidos en las ecuaciones y tomados en la NOM-008. Software Charly'S");
+        var C=(document.getElementById('C').value);
+        var D=(document.getElementById('D').value);     
+        var SDTE=(document.getElementById('SDTE').value);
+        var Stc=(document.getElementById('Stc').value);
+        var STh1=8.1;
+        var SThe=13;
+        var STru=((1/STh1)+(1/SThe));//R
+        var STR=1/STru;
+        var STUR=(STR-(-D));//U
+        var St=(SDTE-Stc);
+        var STQ=(C*STUR*St);
+
+         document.getElementById('Sare').innerHTML=C;  
+         document.getElementById('SU').innerHTML=STUR;   
+         document.getElementById('SR').innerHTML=STru;
+         document.getElementById('SQ').innerHTML=STQ;
+         document.getElementById('SQTOTAL').innerHTML=STQ;
+
+    }
+
+    function VidrioE(){
+        alert("Calcular lado - Este, cabe destacar que los valores necesarios estan incluidos en las ecuaciones y tomados en la NOM-008. Software Charly'S");
+        var E=(document.getElementById('E').value);
+        var F=(document.getElementById('F').value);     
+        var EDTE=(document.getElementById('EDTE').value);
+        var Etc=(document.getElementById('Etc').value);
+        var ETh1=8.1;
+        var EThe=13;
+        var ETru=((1/ETh1)+(1/EThe));//R
+        var ETR=1/ETru;
+        var ETUR=(ETR-(-F));//U
+        var Et=(EDTE-Etc);
+        var ETQ=(E*ETUR*Et);
+
+         document.getElementById('Eare').innerHTML=E;  
+         document.getElementById('EU').innerHTML=ETUR;   
+         document.getElementById('ER').innerHTML=ETru;
+         document.getElementById('EQ').innerHTML=ETQ;
+         document.getElementById('EQTOTAL').innerHTML=ETQ;
+
+    }
+
+    function VidrioO(){
+        alert("Calcular lado - Oeste, cabe destacar que los valores necesarios estan incluidos en las ecuaciones y tomados en la NOM-008. Software Charly'S");
+        var G=(document.getElementById('G').value);
+        var H=(document.getElementById('H').value);     
+        var ODTE=(document.getElementById('ODTE').value);
+        var Otc=(document.getElementById('Otc').value);
+        var OTh1=8.1;
+        var OThe=13;
+        var OTru=((1/OTh1)+(1/OThe));//R
+        var OTR=1/OTru;
+        var OTUR=(OTR-(-H));//U
+        var Ot=(ODTE-Otc);
+        var OTQ=(G*OTUR*Ot);        
+        
+         document.getElementById('Oare').innerHTML=G;  
+         document.getElementById('OU').innerHTML=OTUR;   
+         document.getElementById('OR').innerHTML=OTru;
+         document.getElementById('OQ').innerHTML=OTQ;
+         document.getElementById('OQTOTAL').innerHTML=OTQ;
+
+
+    }
+
+          
+
+
+    </script>
+
+
+
+
+    <style type="text/css">
+    table, th, td{
+
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+    input#Delete{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Cal{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #7AF81F;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Regresar{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+
+    </style> 
+
+
+
+
+    <meta charset="utf-8">
+    <title>Calculo-Cristal</title>
+</head>
+<body>      
+    <link rel="stylesheet" type="text/css" href="Atil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title><br><br>
+
+</head>
+
+
+
+
+
+
+<body>
+    <center>
+    <img src="Images/Rosa.jpg" width="200px"  /><br><br><br>
+    <hr><br>
+
+
+
+<h2> Calculo por conduccion en paredes de Cristal</h2><hr>
+
+
+
+
+<form id="Norte">
+<table style="width: 100%;">
+<br>
+    <tr>    <h2>Lado Norte</h2>    <br>
+    <th> <label>Area del Muro.....</label>
+        <input type="number" id="A" placeholder="m^2"><br><br>
+     
+      <label>Conductividad Termica (K)</label>
+    <input type="number" id="B" placeholder="W/m.K"><br><br>
+
+    <label>Temperatura (DTE).............</label>
+    <input type="number" id="DTE" placeholder="DTE"><br><br>
+    <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="tc" placeholder="C°"><br><br>
+    </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+</tr>
+</table>    
+
+
+<br><br>
+
+    <input type="button" id="Cal" onclick="VidrioN();" value="Calcular">
+    <br><br>
+
+
+</form>
+ <br><hr>
+ <form id="Calculadora">
+<table style="width: 100%;">
+<br>
+    <tr>    <h2>Lado Sur</h2>    <br>
+    <th> <label>Area del Muro.....</label>
+        <input type="number" id="C" placeholder="m^2"><br><br>
+ <label>Conductividad Termica (K)</label>
+ <input type="number" id="D" placeholder="W/m.K"><br><br>
+ <label>Temperatura (DTE).............</label>
+    <input type="number" id="SDTE" placeholder="DTE"><br><br>
+    <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="Stc" placeholder="C°"><br><br></th>
+
+    </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+</table>    
+
+
+
+    
+<br><br>
+
+
+    <input type="button" id="Cal" onclick="VidrioS();" value="Calcular">
+    <br><br>
+    <hr>
+
+</form>
+ <br>
+ <form id="Calculadora">
+<table style="width: 100%;">
+<br>
+    <tr>    <h2>Lado Este</h2>    <br>
+    <th> <label>Area del Muro.....</label>
+        <input type="number" id="E" placeholder="m^2"><br><br>
+        <label>Conductividad Termica (K)</label>
+        <input type="number" id="F" placeholder="W/m.K"><br><br>
+        <label>Temperatura (DTE).............</label>
+     <input type="number" id="EDTE" placeholder="DTE"><br><br>
+      <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="Etc" placeholder="C°"><br><br>
+
+
+    </th>
+
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+</table>    
+
+<br><br>
+
+    
+
+    <input type="button" id="Cal" onclick="VidrioE();" value="Calcular">
+    <br><br>
+    <hr>
+</form>
+
+
+ <br>
+ <form id="Calculadora">
+<table style="width: 100%;">
+<br>
+    <tr>    <h2>Lado Oeste</h2>    <br>
+    <th> <label>Area del Muro.....</label> <input type="number" id="G" placeholder="m^2"><br><br>
+         <label>Conductividad Termica (K)</label>
+          <input type="number" id="H" placeholder="W/m.K"><br><br>
+          <label>Temperatura (DTE).............</label>
+    <input type="number" id="ODTE" placeholder="DTE"><br><br>
+    <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="Otc" placeholder="C°"><br><br>
+    </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+</table>    <br><br>
+
+    
+    
+    <input type="button" id="Cal" onclick="VidrioO();" value="Calcular">
+    <br><br>
+    
+</form>
+<hr>
+
+
+
+<h2>Resultados Norte</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="are"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="U"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="R"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="Q"></span></td>
+    </tr>   
+</table>
+
+<h2>Resultados Sur</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="Sare"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="SU"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="SR"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="SQ"></span></td>
+    </tr>   
+</table>
+
+<h2>Resultados Este</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="Eare"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="EU"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="ER"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="EQ"></span></td>
+    </tr>   
+</table>
+
+
+    <h2>Resultados Oeste</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="Oare"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="OU"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="OR"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="OQ"></span></td>
+    </tr>   
+</table>
+<br><br>
+
+
+ <h2>Resultados Totales</h2>
+   
+    <table style="width: 30%;">
+    <tr>
+        <th>Orientacion</th>
+        <th>Carga Termica</th>
+    </tr>
+    <tr>
+        <td>Norte:</td>
+        <td><span id="NQTOTAL"></span></td>
+    </tr>
+    <tr>
+        <td>Sur</td>
+        <td><span id="SQTOTAL"></span></td>
+    </tr>
+    <tr>
+        <td>Este</td>
+        <td><span id="EQTOTAL"></span></td>
+    </tr>
+    <tr>
+        <td> Oeste</td>
+        <td><span id="OQTOTAL"></span></td>
+    </tr>   
+</table>
+<br>
+<a href="CondRadi.html"><input type="button"  id="Regresar" value="Regresar al Menu"></a>
+
+</center>
+<br><br>
+<br><br><br>
+</body>
+</html>
+
+        

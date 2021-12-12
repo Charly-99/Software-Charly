@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript">
+
+
+
+    function QL(){
+      alert("Calcular por Ocupantes, cabe destacar que los valores necesarios estan incluidos en las ecuaciones y tomados en la NOM-008. Software Charly'S");
+        var A=(document.getElementById('A').value);
+        var B=(document.getElementById('B').value);
+        var C=(document.getElementById('C').value);
+        var N=A/4;
+        GL=34;
+        GS=90;
+        FS=0.825;
+        wq=12;
+        var QL=FS*N*GL;
+        var QS=FS*N*GS;
+        var Qi=A*wq*B;
+        var QE=A*C;
+        document.getElementById('QL').innerHTML=QL;  
+        document.getElementById('QS').innerHTML=QS;
+        document.getElementById('QI').innerHTML=Qi;
+        document.getElementById('QE').innerHTML=QE;  
+    }
+
+    </script>
+
+    <style type="text/css">
+    table, th, td{
+
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+        
+    input#Cal{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #7AF81F;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Regresar{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+
+    </style> 
+
+
+
+
+    <meta charset="utf-8">
+    <title>Calculo-Ocupantes</title>
+</head>
+<body>      
+    <link rel="stylesheet" type="text/css" href="Atil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title><br><br>
+
+</head>
+
+
+
+
+
+
+<body>
+    <center>
+    <img src="Images/Rosa.jpg" width="200px"  /><br><br><br><hr>
+    <br>
+
+<h2> Software Charly'S Basado en la NOM-008</h2>
+<h2>El FS para oficinas,es de 0.75 a 0.9, en promedio es 0.825</h2>
+<hr>
+
+
+<form id="Norte">
+<table style="width: 100%;">
+<br>
+
+<tr>   <br>
+    <th><h2>Ocupantes</h2> 
+        <label>Area de la Base de edificio</label><input type="number" id="A" placeholder="m^2"><br><br>  <hr>          
+        <h2>Iluminacion</h2> 
+        <label>Calor de lampara</label><input type="number" id="B" placeholder="Ejemplo: 0.8% Max: 1"><br><br> <hr>
+        <h2>Equipos</h2> 
+        <label>Potencia de Equipo (S)</label><input type="number" id="C" placeholder="W/m^2"><br><br>            
+    </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+
+</tr>
+</table>    
+<h2>Resultados</h2>
+    <table style="width: 30%;">
+    <tr>
+        <th>Carga</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Carga Latente (W)</td>
+        <td><span id="QL"></span></td>
+    </tr>
+     <tr>
+        <td>Carga Sensible (W)</td>
+        <td><span id="QS"></span></td>
+    </tr>
+    
+     <tr>
+        <td>Carga Iluminacion (W)</td>
+        <td><span id="QI"></span></td>
+    </tr>
+    <tr>
+        <td>Carga Equipos (W)</td>
+        <td><span id="QE"></span></td>
+    </tr>
+    
+</table>
+<br><br>
+    <a href="CondRadi.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="QL();" value="Calcular">
+    <br><br><hr>
+</center>
+<br><br>
+<br><br><br>
+</body>
+</html>
+
+        

@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style type="text/css">
+    table, th, td{
+
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+    input#Delete{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Cal{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #7AF81F;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Regresar{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+
+    </style> 
+
+
+
+
+    <script type="text/javascript">
+        function Borrar(){
+            document.getElementById('Calculadora').reset();
+            
+    }   
+
+    function Norte(){
+            alert("Software Charly'S: Calculo-Norte");
+            var A=(document.getElementById('A').value);
+            var B=(document.getElementById('B').value);
+            var C=(document.getElementById('C').value);
+            var D=(document.getElementById('D').value);
+            var E=(document.getElementById('E').value);
+            var F=(document.getElementById('F').value);
+            var G=(document.getElementById('G').value);
+            var H=(document.getElementById('H').value);
+            var I=(document.getElementById('I').value);
+            var J=(document.getElementById('J').value);
+            var K=(document.getElementById('K').value);
+            var DTE=(document.getElementById('DTE').value);
+            var TC=(document.getElementById('TC').value);
+            var X=(C/B);
+            var Y=(E/D);
+            var Z=(G/F);
+            var V=(I/H);
+            var W=(K/J);
+            var H1=8.1;
+            var HE=13;
+            var RU=((1/H1)+(1/HE));
+            var R=(RU+X+Y+Z+V+W);
+            var TEMP=(DTE-TC);
+            var U=(1/R);
+            var Q=(A*U*TEMP);
+            
+            document.getElementById('are').innerHTML=A;      
+            document.getElementById('U').innerHTML=U;   
+            document.getElementById('R').innerHTML=R; 
+            document.getElementById('Q').innerHTML=Q;   
+
+        }
+
+ function Sur(){
+            alert("Software Charly'S: Calculo-Sur");
+            var a=(document.getElementById('a').value);
+            var b=(document.getElementById('b').value);
+            var c=(document.getElementById('c').value);
+            var d=(document.getElementById('d').value);
+            var e=(document.getElementById('e').value);
+            var f=(document.getElementById('f').value);
+            var g=(document.getElementById('g').value);
+            var h=(document.getElementById('h').value);
+            var i=(document.getElementById('i').value);
+            var j=(document.getElementById('j').value);
+            var k=(document.getElementById('k').value);
+            var dte=(document.getElementById('dte').value);
+            var tc=(document.getElementById('tc').value);  
+            var x=(c/b);
+            var y=(e/d);
+            var z=(g/f);
+            var w=(k/j);
+            var v=(i/h);
+            var h1=8.1;
+            var he=13;
+            var ru=((1/h1)+(1/he)); 
+            var r=(ru+x+y+z+v+w);
+            var u=(1/r);
+            var temp=(dte-tc);
+            var q=(a*u*temp);
+
+
+
+            document.getElementById('POI').innerHTML=a;      
+            document.getElementById('OIP').innerHTML=u; 
+            document.getElementById('IPO').innerHTML=r; 
+            document.getElementById('WER').innerHTML=q;  
+            
+
+        }
+
+    
+           function Este(){
+alert("Software Charly'S: Calculo-Este");
+            var EAa=(document.getElementById('AA').value);
+            var EBb=(document.getElementById('BB').value);
+            var ECc=(document.getElementById('CC').value);
+            var EDd=(document.getElementById('DD').value);
+            var EEe=(document.getElementById('EE').value);
+            var EFf=(document.getElementById('FF').value);
+            var EGg=(document.getElementById('GG').value);
+            var EHh=(document.getElementById('HH').value);
+            var EIi=(document.getElementById('II').value);
+            var EJj=(document.getElementById('JJ').value);
+            var EKk=(document.getElementById('KK').value);            
+            var EDTE=(document.getElementById('DTEDTE').value);
+            var ETC=(document.getElementById('TCTC').value);   
+            var EXx=(ECc/EBb);
+            var EYy=(EEe/EDd);
+            var EZz=(EGg/EFf);
+            var EWw=(EKk/EJj);
+            var EVv=(EIi/EHh);
+            var EHh1=8.1;
+            var EHhe=13;
+            var ERu=((1/EHh1)+(1/EHhe));
+            var ERr=(ERu+EXx+EYy+EZz+EVv+EWw);
+            var EUu=(1/ERr);
+            var ETEMP=(EDTE-ETC);
+            var EQq=(EAa*EUu*ETEMP);            
+            document.getElementById('EAA').innerHTML=EAa; 
+            document.getElementById('EUU').innerHTML=EUu; 
+            document.getElementById('ERR').innerHTML=ERr; 
+            document.getElementById('EQQ').innerHTML=EQq;   
+
+        }
+
+
+
+         function Oeste(){
+         alert("Software Charly'S: Calculo-Oeste");
+            var OEAa=(document.getElementById('OAA').value);
+            var OEBb=(document.getElementById('OBB').value);
+            var OECc=(document.getElementById('OCC').value);
+            var OEDd=(document.getElementById('ODD').value);
+            var OEEe=(document.getElementById('OEE').value);
+            var OEFf=(document.getElementById('OFF').value);
+            var OEGg=(document.getElementById('OGG').value);
+            var OEHh=(document.getElementById('OHH').value);
+            var OEIi=(document.getElementById('OII').value);
+            var OEJj=(document.getElementById('OJJ').value);
+            var OEKk=(document.getElementById('OKK').value);            
+            var OEDTE=(document.getElementById('ODTEDTE').value);
+            var OETC=(document.getElementById('OTCTC').value);   
+            var OEXx=(OECc/OEBb);
+            var OEYy=(OEEe/OEDd);
+            var OEZz=(OEGg/OEFf);
+            var OEWw=(OEKk/OEJj);
+            var OEVv=(OEIi/OEHh);
+            var OEHh1=8.1;
+            var OEHhe=13;
+            var OERu=((1/OEHh1)+(1/OEHhe));
+            var OERr=(OERu+OEXx+OEYy+OEZz+OEVv+OEWw);
+            var OEUu=(1/OERr);
+            var OETEMP=(OEDTE-OETC);
+            var OEQq=(OEAa*OEUu*OETEMP);            
+            document.getElementById('OEAA').innerHTML=OEAa; 
+            document.getElementById('OEUU').innerHTML=OEUu; 
+            document.getElementById('OERR').innerHTML=OERr; 
+            document.getElementById('OEQQ').innerHTML=OEQq;   
+
+        }
+
+
+    function Techado(){
+            alert("Software Charly'S: Calculo-Techado");
+            var TAL=(document.getElementById('TA').value);
+            var TBL=(document.getElementById('TB').value);
+            var TCL=(document.getElementById('TCc').value);
+            var TDL=(document.getElementById('TD').value);
+            var TEL=(document.getElementById('TE').value);
+            var TFL=(document.getElementById('TF').value);
+            var TGL=(document.getElementById('TG').value);                
+            var THL=(document.getElementById('TH').value);
+            var TIL=(document.getElementById('TI').value);
+            var TJL=(document.getElementById('TJ').value);
+            var TKL=(document.getElementById('TK').value);
+            var TDTEL=(document.getElementById('TDTE').value);
+            var TtcL=(document.getElementById('Ttc').value);
+            var TXL=(TCL/TBL);
+            var TYL=(TEL/TDL);
+            var TZL=(TGL/TFL);
+            var TVL=(TIL/THL);
+            var TWL=(TKL/TJL);
+            var Th1L=6.6;
+            var TheL=13;
+            var TruL=((1/Th1L)+(1/TheL));
+            var TRL=(TruL+TXL+TYL+TZL+TVL+TWL);
+            var TUL=(1/TRL);
+            var TDtL=(TDTEL-TtcL);
+            var TQL=(TAL*TUL*TDtL);
+            document.getElementById('TAL').innerHTML=TAL; 
+            document.getElementById('TUL').innerHTML=TUL; 
+            document.getElementById('TRL').innerHTML=TRL; 
+            document.getElementById('TQL').innerHTML=TQL;   
+       
+            
+
+        }
+
+
+
+   
+
+    </script>
+
+
+    
+
+    <meta charset="utf-8">
+    <title>Todos los Metodos</title>
+</head>
+<body>      
+    <link rel="stylesheet" type="text/css" href="Atil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title><br><br>
+
+</head>
+<body>
+    <center>
+        <h1>Todos los Metodos</h1><br>
+    <img src="Images/Rosa.jpg" width="200px"  /><br><br><br>
+    <hr><br>
+
+<form id="Calculadora">
+<h2> Software Charly'S Basado en la NOM-008</h2><hr>
+
+    
+
+
+
+    <h2>Ingresa Datos Norte</h2>
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la pared a calcular.....</label>
+        <input type="number" name="A" id="A" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Area.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica del Muro (K)</label>
+    <input type="number" id="B" placeholder="W/m.K"><br><br>
+    <label>Espesor del Muro(e).............</label>
+    <input type="text" id="C" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Mur.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+   <tr>
+    
+      <th> <label>Conductividad, Revestimiento 1 (K)</label>
+    <input type="number" id="D" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 1(e).............</label>
+    <input type="number" id="E" placeholder="m"><br><br></th>
+     <th><img src="Images/Espint.jpg" width="200px"  /><br><br><br><hr> </th>
+     <th> <label>Conductividad, Revestimiento 2 (K)</label>
+    <input type="number" id="F" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 2(e).............</label>
+    <input type="number" id="G" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Espext.jpg" width="200px"  /><br><br><br></th>
+
+ </tr>
+
+<tr>
+    <th><label>Conductividad, Revestimiento 3 (K)</label>
+    <input type="number" id="H" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 3(e).............</label>
+    <input type="number" id="I" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revtres.jpg" width="200px"  /><br><br><br></th>
+     <th> <label>Conductividad, Revestimiento 4(K)</label>
+    <input type="number" id="J" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 4(e).............</label>
+    <input type="number" id="K" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revcuatro.jpg" width="200px"  /><br><br><br></th>
+
+</tr>
+<tr> 
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="DTE" placeholder="DTE"><br><br></th>
+    <th> <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="TC" placeholder="C°"><br><br></th>
+</tr>
+
+</table> <br><br>
+
+    
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Menu.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Norte();" value="Calcular-Norte">
+    <br><br>
+    <hr>   
+
+    
+
+
+    <h2>Ingresa Datos Sur</h2>
+
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la pared a calcular.....</label>
+        <input type="number" name="A" id="a" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Area.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica del Muro (K)</label>
+    <input type="number" id="b" placeholder="W/m.K"><br><br>
+    <label>Espesor del Muro(e).............</label>
+    <input type="text" id="c" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Mur.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+   <tr>
+    
+      <th> <label>Conductividad, Revestimiento 1 (K)</label>
+    <input type="number" id="d" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 1(e).............</label>
+    <input type="number" id="e" placeholder="m"><br><br></th>
+     <th><img src="Images/Espint.jpg" width="200px"  /><br><br><br><hr> </th>
+     <th> <label>Conductividad, Revestimiento 2 (K)</label>
+    <input type="number" id="f" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 2(e).............</label>
+    <input type="number" id="g" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Espext.jpg" width="200px"  /><br><br><br></th>
+
+ </tr>
+
+<tr>
+    <th><label>Conductividad, Revestimiento 3 (K)</label>
+    <input type="number" id="h" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 3(e).............</label>
+    <input type="number" id="i" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revtres.jpg" width="200px"  /><br><br><br></th>
+     <th> <label>Conductividad, Revestimiento 4(K)</label>
+    <input type="number" id="j" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 4(e).............</label>
+    <input type="number" id="k" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revcuatro.jpg" width="200px"  /><br><br><br></th>
+
+</tr>
+<tr> 
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="dte" placeholder="DTE"><br><br></th>
+    <th> <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="tc" placeholder="C°"><br><br></th>
+</tr>
+
+</table> <br><br>
+
+    
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Menu.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Sur();" value="Calcular-Sur">
+    <br><br>
+    <hr>   
+
+
+    
+
+    <h2>Ingresa Datos Este</h2>
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la pared a calcular.....</label>
+        <input type="number" name="A" id="AA" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Area.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica del Muro (K)</label>
+    <input type="number" id="BB" placeholder="W/m.K"><br><br>
+    <label>Espesor del Muro(e).............</label>
+    <input type="text" id="CC" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Mur.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+   <tr>
+    
+      <th> <label>Conductividad, Revestimiento 1 (K)</label>
+    <input type="number" id="DD" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 1(e).............</label>
+    <input type="number" id="EE" placeholder="m"><br><br></th>
+     <th><img src="Images/Espint.jpg" width="200px"  /><br><br><br><hr> </th>
+     <th> <label>Conductividad, Revestimiento 2 (K)</label>
+    <input type="number" id="FF" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 2(e).............</label>
+    <input type="number" id="GG" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Espext.jpg" width="200px"  /><br><br><br></th>
+
+ </tr>
+
+<tr>
+    <th><label>Conductividad, Revestimiento 3 (K)</label>
+    <input type="number" id="HH" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 3(e).............</label>
+    <input type="number" id="II" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revtres.jpg" width="200px"  /><br><br><br></th>
+     <th> <label>Conductividad, Revestimiento 4(K)</label>
+    <input type="number" id="JJ" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 4(e).............</label>
+    <input type="number" id="KK" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revcuatro.jpg" width="200px"  /><br><br><br></th>
+
+</tr>
+<tr> 
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="DTEDTE" placeholder="DTE"><br><br></th>
+    <th> <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="TCTC" placeholder="C°"><br><br></th>
+</tr>
+
+</table> <br><br>
+
+    
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Menu.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Este();" value="Calcular-Este">
+    <br><br>
+    <hr>   
+
+
+
+
+    <h2>Ingresa Datos Oeste</h2>
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la pared a calcular.....</label>
+        <input type="number" name="A" id="OAA" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Area.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica del Muro (K)</label>
+    <input type="number" id="OBB" placeholder="W/m.K"><br><br>
+    <label>Espesor del Muro(e).............</label>
+    <input type="text" id="OCC" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Mur.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+   <tr>
+    
+      <th> <label>Conductividad, Revestimiento 1 (K)</label>
+    <input type="number" id="ODD" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 1(e).............</label>
+    <input type="number" id="OEE" placeholder="m"><br><br></th>
+     <th><img src="Images/Espint.jpg" width="200px"  /><br><br><br><hr> </th>
+     <th> <label>Conductividad, Revestimiento 2 (K)</label>
+    <input type="number" id="OFF" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 2(e).............</label>
+    <input type="number" id="OGG" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Espext.jpg" width="200px"  /><br><br><br></th>
+
+ </tr>
+
+<tr>
+    <th><label>Conductividad, Revestimiento 3 (K)</label>
+    <input type="number" id="OHH" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 3(e).............</label>
+    <input type="number" id="OII" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revtres.jpg" width="200px"  /><br><br><br></th>
+     <th> <label>Conductividad, Revestimiento 4(K)</label>
+    <input type="number" id="OJJ" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 4(e).............</label>
+    <input type="number" id="OKK" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revcuatro.jpg" width="200px"  /><br><br><br></th>
+
+</tr>
+<tr> 
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="ODTEDTE" placeholder="DTE"><br><br></th>
+    <th> <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="OTCTC" placeholder="C°"><br><br></th>
+</tr>
+
+</table> <br><br>
+
+    
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Menu.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Oeste();" value="Calcular-Oeste">
+    <br><br>
+    <hr>   
+
+<h2>Ingresa Datos Techado</h2>
+
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la Loza.....</label>
+        <input type="number" id="TA" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Loz.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica de la Loza(K)</label>
+    <input type="number" id="TB" placeholder="W/m.K"><br><br>
+    <label>Espesor de la Loza(e)</label>
+    <input type="text" id="TCc" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Loza.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+<tr> 
+
+    <th> <label>Conductividad, Recubrimiento Interno 1(K)</label>
+    <input type="number" id="TD" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TE" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Lozint.jpg" width="200px"  /><br><br><br> </th>
+    <th> <label>Conductividad, Recubrimiento Interno 2(K)</label>
+    <input type="number" id="TF" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TG" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Recint3.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+
+
+<tr> 
+
+    <th> <label>Conductividad, Recubrimiento Interno 3(K)</label>
+    <input type="number" id="TH" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TI" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Loz4.jpg" width="200px"  /><br><br><br> </th>
+    <th> <label>Conductividad, Recubrimiento Interno 4(K)</label>
+    <input type="number" id="TJ" placeholder="W/m.K"><br><br>
+    <label>Espesor del Recubrimiento(e)</label>
+    <input type="text" id="TK" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Loz5.jpg" width="200px"  /><br><br><br> </th>
+</tr>
+
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="TDTE" placeholder="DTE"><br><br></th>
+    <th><label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="Ttc" placeholder="C°"><br><br></th>
+</tr>
+</table>    <br>
+
+ <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Menu.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al Menu"></a>
+    <input type="button" id="Cal" onclick="Techado();" value="Calcular-Techado">
+    <br><br>
+    <hr>
+    <h2>Resultados Lado Norte</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="are"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="U"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="R"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="Q"></span></td>
+    </tr>
+</table>
+
+
+
+
+<br><br><hr> <h2>Resultados Lado Sur</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="POI"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="OIP"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="IPO"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="WER"></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<br><br><hr> <h2>Resultados Lado Este</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="EAA"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="EUU"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="ERR"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="EQQ"></span></td>
+    </tr>
+    
+</table>
+
+
+
+
+
+<br><br><hr> <h2>Resultados Lado Oeste</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="OEAA"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="OEUU"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="OERR"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="OEQQ"></span></td>
+    </tr>
+    
+</table><hr>
+
+
+
+
+<br><br><hr> <h2>Resultados Techado</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="TAL"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="TUL"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="TRL"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="TQL"></span></td>
+    </tr>
+    
+</table><hr>
+
+
+    
+</form>
+
+ <br>
+
+</center>
+<br><br>
+<br><br><br>
+</body>
+</html>
+
+        

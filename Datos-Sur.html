@@ -1,0 +1,222 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <script type="text/javascript">
+        function Borrar(){
+            document.getElementById('Calculadora').reset();
+            
+    }   
+
+    function Calcular(){
+            
+            var a=(document.getElementById('A').value);
+            var B=(document.getElementById('B').value);
+            var C=(document.getElementById('C').value);
+            var D=(document.getElementById('D').value);
+            var E=(document.getElementById('E').value);
+            var F=(document.getElementById('F').value);
+            var G=(document.getElementById('G').value);
+            var H=(document.getElementById('H').value);
+            var I=(document.getElementById('I').value);
+            var J=(document.getElementById('J').value);
+            var K=(document.getElementById('K').value);
+            var DTE=(document.getElementById('DTE').value);
+            var tc=(document.getElementById('tc').value);
+            var X=(C/B);
+            var Y=(E/D);
+            var Z=(G/F);
+            var V=(I/H);
+            var W=(K/J);
+            var h1=8.1;
+            var he=13;
+            var ru=((1/h1)+(1/he));
+            var R=(ru+X+Y+Z+V+W);
+            var temp=(DTE-tc);
+            var U=(1/R);
+            var Q=(a*U*temp);
+            
+            document.getElementById('are').innerHTML=a;      
+            document.getElementById('U').innerHTML=U;   
+            document.getElementById('R').innerHTML=R; 
+            document.getElementById('Q').innerHTML=Q;   
+
+        }
+
+    </script>
+
+
+    <style type="text/css">
+    table, th, td{
+
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+    input#Delete{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Cal{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #7AF81F;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+    input#Regresar{
+        padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+    }
+
+    </style> 
+
+
+
+
+    <meta charset="utf-8">
+    <title>Sur</title>
+</head>
+<body>      
+    <link rel="stylesheet" type="text/css" href="Atil.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title><br><br>
+
+</head>
+<body>
+    <center>
+    <img src="Images/Rosa.jpg" width="200px"  /><br><br><br>
+    <hr><br>
+
+<form id="Calculadora">
+<h2> En caso que sobren casillas Vacias, poner K=1 y e=0, para no alterar los calculos.</h2><hr>
+
+    <h2>Ingresa Datos - Sur</h2>
+
+
+<table style="width: 100%;">
+    <tr>
+    <th> <label>Area de la pared a calcular.....</label>
+        <input type="number" name="A" id="A" placeholder="m^2"><br><br></th>
+    <th> <img src="Images/Area.jpg" width="200px"  /><br><br><br> </th>
+    <th>  <label>Conductividad Termica del Muro (K)</label>
+    <input type="number" id="B" placeholder="W/m.K"><br><br>
+    <label>Espesor del Muro(e).............</label>
+    <input type="text" id="C" placeholder="m"><br><br>  </th>
+    <th> <img src="Images/Mur.jpg" width="200px"  /><br><br><br> </th>
+ </tr>
+
+
+   <tr>
+    
+      <th> <label>Conductividad, Revestimiento 1 (K)</label>
+    <input type="number" id="D" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 1(e).............</label>
+    <input type="number" id="E" placeholder="m"><br><br></th>
+     <th><img src="Images/Espint.jpg" width="200px"  /><br><br><br><hr> </th>
+     <th> <label>Conductividad, Revestimiento 2 (K)</label>
+    <input type="number" id="F" placeholder="W/m.K"><br><br>
+    <label>Espesor del Revestimiento 2(e).............</label>
+    <input type="number" id="G" placeholder="m"><br><br> </th>
+    <th> <img src="Images/Espext.jpg" width="200px"  /><br><br><br></th>
+
+ </tr>
+
+<tr>
+    <th><label>Conductividad, Revestimiento 3 (K)</label>
+    <input type="number" id="H" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 3(e).............</label>
+    <input type="number" id="I" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revtres.jpg" width="200px"  /><br><br><br></th>
+     <th> <label>Conductividad, Revestimiento 4(K)</label>
+    <input type="number" id="J" placeholder="W/m.K"><br><br>
+    <label>Espesor Capa 4(e).............</label>
+    <input type="number" id="K" placeholder="m"><br><br></th>
+    <th> <img src="Images/Revcuatro.jpg" width="200px"  /><br><br><br></th>
+
+</tr>
+<tr> 
+<th><label>Temperatura (DTE).............</label>
+    <input type="number" id="DTE" placeholder="DTE"><br><br></th>
+    <th> <label>Temperatura de Confort Deseada:</label>
+    <input type="number" id="tc" placeholder="C°"><br><br></th>
+</tr>
+
+</table>    
+
+    
+
+
+    
+
+
+    <h2>Resultados</h2>
+    <table style="width: 50%;">
+    <tr>
+        <th>Funcion</th>
+        <th>Resultado</th>
+    </tr>
+    <tr>
+        <td>Area Total:</td>
+        <td><span id="are"></span></td>
+    </tr>
+    <tr>
+        <td>Coeficiente Global de transferencia(U):</td>
+        <td><span id="U"></span></td>
+    </tr>
+    <tr>
+        <td>Resistencia Termica(R):</td>
+        <td><span id="R"></span></td>
+    </tr>
+    <tr>
+        <td> Carga Termica por conduccion(W):</td>
+        <td><span id="Q"></span></td>
+    </tr>
+   
+</table>
+<br><br>
+
+    
+    
+    <input type="button"  id="Delete" onclick="Borrar();" value="Borrar">    
+    <a href="Pared.html"><input type="button" id="Regresar" name="Regresar" value="Regresar al anterior"></a>
+    <input type="button" id="Cal" onclick="Calcular();" value="Calcular">
+    <br><br>
+    <hr>
+</form>
+
+ <br>
+
+</center>
+<br><br>
+<br><br><br>
+</body>
+</html>
+
+        

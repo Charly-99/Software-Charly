@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menu-Charly'S</title>
+    <style type="text/css">
+    table, th, td{
+        border: 1px solid black;
+    }
+    body{
+        background: #9FC385;
+    }
+
+.container{
+	width: 500px;
+	height: 350px;
+	background: lightblue;
+	margin: 1em auto;
+}
+
+
+
+input#Vidrio{
+    padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+
+}
+
+input#Pared{
+    padding: 10px 50px;
+    font-size: 1em;
+    background-color: #22EBD1;
+    border: 0px;
+
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0px 3px 0px #000;
+
+}
+
+
+
+
+    </style>
+<script type="text/javascript">
+    
+    function Vidrio(){
+
+        alert("Los datos estan basados en la NOM-018-ENER-2011, Tome en cuenta que solo se realizaran los calculos para Cristalinas, como Cristales, vidrios, Ventanas, etc.");
+    }
+     function Solida(){
+
+        alert("Los datos estan basados en la NOM-018-ENER-2011, Tome en cuenta que solo se realizara para partes no transparentes, como paredes de Block, Ladrillo,Recubrimientos, Para ventanas se recomienda la de cristales");
+    }
+</script>
+
+
+</head>
+<body>
+<br><br>
+    <center>
+    	<h1>Software Charly'S </h1>
+        <h1>Unicamente para edificios no recidenciales</h1>
+    	<br><br>
+    <img src="Images/Edivi.jpg" width="300px"  /><br><br><br>
+    <h2> Software Charly'S Basado en la NOM-008</h2>
+    <br><hr><br>
+
+
+ <div class="container"> <!--div es caja contenedora -->
+        <p><br>
+
+NORMA Oficial Mexicana NOM-018-ENER-2011, Aislantes térmicos para edificaciones. Características y
+métodos de prueba. 
+<hr> <h3 >Objetivo</h3><hr>
+Objetivo
+Esta Norma Oficial Mexicana establece las características y métodos de prueba que deben cumplir los
+productos, componentes y elementos termoaislantes, para techos, plafones y muros de las edificaciones.
+<br><br><hr>
+Software Creado por el Alumno Carlos Enrique Bautista Sanchez, Estudiante de Ingenieria Mecanica, S17.
+En caso de requerir explicaciones sobre el codigo fuente , contactar a:
+Correro: charli255bs@gmail.com
+Cel:2261048833 
+</p>
+
+    </div>
+<br>
+
+    <hr><br>
+<h2>Seleccionar Tipo de Calculo</h2>
+<br>
+    <a href="Pared.html"><input type="button" onclick="Solida();" name="Pared" id="Pared" value="Solidas"></a>
+    <a href="CondRadi.html"><input type="button" onclick="Vidrio();" name="Vidrio" id="Vidrio" value="cristales"></a>
+<!--
+    <a href="Conveccion.html"><input type="button" name="Conveccion" id="Conveccion" value="Conveccion"></a>
+    <a href="Radiacion.html"><input type="button" name="Radiacion" id="Radiacion" value="Radiacion"></a>
+    <a href="Todo.html"><input type="button" name="Todo" id="Todo" value="Metodo - Todos"></a>-->
+ <br><br><br><hr><br><br><br>
+</center>
+</body>
+</html>
